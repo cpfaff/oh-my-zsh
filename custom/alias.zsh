@@ -13,11 +13,19 @@ then
    fi
 fi'
 
-# Shortcuts
 alias vi='vim'
 alias se='sudoedit'
 
 alias c='clear'
 alias df='df -h'
 
-alias session='tmuxinator start'
+# tmux sessions 
+alias session='tmuxinator start' 
+
+# Show history
+alias history='fc -l 1'
+
+# List direcory contents
+alias l='ls -l'
+alias ll='ls -la'
+alias lsa='ls -lah'
