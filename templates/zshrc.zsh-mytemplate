@@ -19,25 +19,6 @@ setopt correct
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="cpfaff"
 
-# Aliases
-alias sysup="if ping -c 2 google.de &> /dev/null; then sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove; else echo 'No inet connection!'; fi"
-
-alias loadkey='
-if [ $SSH_AGENT_PID ]
-then
-   if [[ $(ssh-add -l) != *id_?sa* ]] 
-   then
-      ssh-add -t 2h 
-   fi
-fi'
-
-alias vi='vim'
-alias se='sudoedit'
-alias c='clear'
-alias df='df -h'
-
-alias session='tmuxinator start'
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -63,7 +44,9 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
+
 # Exports
 export EDITOR='/usr/bin/vim'
 export TERM=screen-256color-bce
 export PATH=/home/sabsirro/.own_scripts:/usr/games:/home/sabsirro/.rvm/gems/ruby-1.9.3-p286/bin:/home/sabsirro/.rvm/gems/ruby-1.9.3-p286@global/bin:/home/sabsirro/.rvm/rubies/ruby-1.9.3-p286/bin:/home/sabsirro/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin:/usr/local/android-sdk/platform-tools:/home/sabsirro/R/R_libs/knitr/bin
+export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
