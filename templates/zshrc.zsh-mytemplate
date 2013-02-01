@@ -44,7 +44,6 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
-
 # Exports
 export EDITOR='/usr/bin/vim'
 export TERM=screen-256color-bce
