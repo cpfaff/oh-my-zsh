@@ -28,4 +28,6 @@ alias history='fc -l 1'
 # List direcory contents
 alias l='ls -l'
 alias ll='ls -la'
-alias lsa='ls -lah'
+alias lsa='ls -lah' 
+
+alias gmm='git merge master'
