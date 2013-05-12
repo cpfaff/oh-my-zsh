@@ -30,4 +30,5 @@ alias l='ls -l'
 alias ll='ls -la'
 alias lsa='ls -lah' 
 
-alias gmm='git merge master'
+alias gmm='git merge master' 
+alias gpu='loadkey && git pull' 
