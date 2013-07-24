@@ -32,4 +32,9 @@ alias lsa='ls -lah'
 
 alias gmm='git merge master' 
 alias gpl='loadkey && git pull'  
-alias gps='loadkey && git push'
+alias gps='loadkey && git push' 
+
+# apt-get 
+alias agi='sudo apt-get install' 
+alias agp='sudo apt-get purge' 
+alias acs='apt-cache search'
