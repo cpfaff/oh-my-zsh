@@ -38,3 +38,6 @@ alias gps='loadkey && git push'
 alias agi='sudo apt-get install' 
 alias agp='sudo apt-get purge' 
 alias acs='apt-cache search'
+
+# fixes broken zsh histroy file preserving the history 
+alias fixhistory='pushd ~ && mv .zsh_history .zsh_history_bad && strings .zsh_history_bad > .zsh_history && fc -R .zsh_history && popd'
