@@ -41,3 +41,5 @@ alias acs='apt-cache search'
 
 # fixes broken zsh histroy file preserving the history 
 alias fixhistory='pushd ~ && mv .zsh_history .zsh_history_bad && strings .zsh_history_bad > .zsh_history && fc -R .zsh_history && popd'
+
+alias glb='git for-each-ref --sort=-committerdate refs/heads/'
