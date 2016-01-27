@@ -43,3 +43,7 @@ alias acs='apt-cache search'
 alias fixhistory='pushd ~ && mv .zsh_history .zsh_history_bad && strings .zsh_history_bad > .zsh_history && fc -R .zsh_history && popd'
 
 alias glb='git for-each-ref --sort=-committerdate refs/heads/'
+
+# for the fasd script
+alias m='f -e mplayer'
+alias j='fasd_cd -d'
