@@ -1,17 +1,9 @@
 # Aliases # 
 
 # System update
-alias sysup="if ping -c 1 google.de &> /dev/null; then sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove; else echo 'No inet connection!'; fi"
+alias sysupu="if ping -c 1 google.de &> /dev/null; then sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove; else echo 'No inet connection!'; fi"
 
-# Load and cache ssh agent
-alias loadkey='
-if [ $SSH_AGENT_PID ]
-then
-   if [[ $(ssh-add -l) != *id_?sa* ]] 
-   then
-      ssh-add -t 2h 
-   fi
-fi'
+alias sysupa="sudo pacman -Syu"
 
 alias vi='vim'
 alias se='sudoedit'
@@ -31,13 +23,8 @@ alias ll='ls -la'
 alias lsa='ls -lah' 
 
 alias gmm='git merge master' 
-alias gpl='loadkey && git pull'  
-alias gps='loadkey && git push' 
-
-# apt-get 
-alias agi='sudo apt-get install' 
-alias agp='sudo apt-get purge' 
-alias acs='apt-cache search'
+alias gpl='git pull'  
+alias gps='git push' 
 
 # fixes broken zsh histroy file preserving the history 
 alias fixhistory='pushd ~ && mv .zsh_history .zsh_history_bad && strings .zsh_history_bad > .zsh_history && fc -R .zsh_history && popd'
@@ -46,4 +33,8 @@ alias glb='git for-each-ref --sort=-committerdate refs/heads/'
 
 # for the fasd script
 alias m='f -e mplayer'
+alias mpa='mplayer *'
 alias j='fasd_cd -d'
+
+# as arch has its own version of a rename tool
+alias prename='perl-rename'
