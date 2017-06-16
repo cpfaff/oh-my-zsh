@@ -1,9 +1,7 @@
 # Aliases # 
 
 # System update
-alias sysupu="if ping -c 1 google.de &> /dev/null; then sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove; else echo 'No inet connection!'; fi"
-
-alias sysupa="sudo pacman -Syu"
+alias sysup="sudo pacman -Syu"
 
 alias vi='vim'
 alias se='sudoedit'
